@@ -7,7 +7,7 @@
 
 ## Framework
 
-![MFI-DTI](\image\MFI-DTI.png)
+![MFI-DTI](image/MFI-DTI.png)
 ## System Requirements
 The source code developed in Python 3.8 using PyTorch 2.3.1. The required python dependencies are given below. 
 
