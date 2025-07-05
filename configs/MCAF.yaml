@@ -12,6 +12,6 @@ DECODER:
   BINARY: 1
 
 COMET:
-  PROJECT_NAME: "MFI_Vanilla"
+  PROJECT_NAME: "MCAF_Vanilla"
   TAG: "Non_DA"
 

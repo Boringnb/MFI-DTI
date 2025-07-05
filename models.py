@@ -33,9 +33,9 @@ def entropy_logits(linear_output):
     return loss_ent
 
 
-class MFI(nn.Module):
+class MCAF(nn.Module):
     def __init__(self, **config):
-        super(MFI, self).__init__()
+        super(MCAF, self).__init__()
         drug_in_feats = config["DRUG"]["NODE_IN_FEATS"]
         drug_embedding = config["DRUG"]["NODE_IN_EMBEDDING"]
         drug_hidden_feats = config["DRUG"]["HIDDEN_LAYERS"]

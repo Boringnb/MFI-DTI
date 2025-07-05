@@ -1,4 +1,4 @@
-# MFI-DTI: Multimodal feature fusion interactive networks for drug target interaction prediction 
+# MCAF-DTI: Multimodal feature fusion interactive networks for drug target interaction prediction 
 
 
 
@@ -7,7 +7,7 @@
 
 ## Framework
 
-![MFI-DTI](image/MFI-DTI.png)
+![MCAF-DTI](image/MCAF.png)
 ## System Requirements
 The source code developed in Python 3.8 using PyTorch 2.3.1. The required python dependencies are given below. 
 
@@ -37,12 +37,12 @@ rdkit==2024.3.5
 
 
 
-## Run MFI-DTI
+## Run MCAF-DTI
 
 
- Execute the following command to train the MFI-DTI model. `dataset` could either be `bindingdb`, `biosnap` and `human`. 
+ Execute the following command to train the MCAF-DTI model. `dataset` could either be `bindingdb`, `biosnap` and `human`. 
 ```
-python main.py --cfg "configs/MFI.yaml" --data dataset 
+python main.py --cfg "configs/MCAF.yaml" --data dataset 
 ```
 
 

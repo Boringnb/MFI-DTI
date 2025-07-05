@@ -63,7 +63,7 @@ _C.DA.USE_ENTROPY = True
 _C.COMET = CN()
 # Please change to your own workspace name on comet.
 _C.COMET.WORKSPACE = "pz-white"
-_C.COMET.PROJECT_NAME = "MFI"
+_C.COMET.PROJECT_NAME = "MCAF"
 _C.COMET.USE = False
 _C.COMET.TAG = None
 

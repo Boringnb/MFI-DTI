@@ -4,7 +4,7 @@ try:
 except ImportError as e:
     print("Comet ML is not installed, ignore the comet experiment monitor")
     comet_support = False
-from models import MFI
+from models import MCAF
 from time import time
 from utils import set_seed, graph_collate_func, mkdir
 from configs import get_cfg_defaults
@@ -19,7 +19,7 @@ import pandas as pd
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
-parser = argparse.ArgumentParser(description="MFI for DTI prediction")
+parser = argparse.ArgumentParser(description="MCAF for DTI prediction")
 parser.add_argument('--cfg', required=True, help="path to config file", type=str)
 parser.add_argument('--data', required=True, type=str, metavar='TASK',
                     help='dataset')
@@ -121,7 +121,7 @@ def main():
         val_generator = DataLoader(test_target_dataset, **params)
         test_generator = DataLoader(test_target_dataset, **params)
 
-    model = MFI(**cfg).to(device)
+    model = MCAF(**cfg).to(device)
 
     if cfg.DA.USE:
         if cfg["DA"]["RANDOM_LAYER"]:

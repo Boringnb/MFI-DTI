@@ -20,6 +20,6 @@ DECODER:
 
 # Config below only when you use comet
 COMET:
-  PROJECT_NAME: "MFI_CDAN"
+  PROJECT_NAME: "MCAF_CDAN"
   TAG: "DA"
 
